@@ -1,10 +1,10 @@
 package net.cloud.betterclouds.forge.mixin;
 
-import net.minecraft.client.gl.ShaderProgram;
+import net.minecraft.client.gl.GlShader;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
-@Mixin(ShaderProgram.class)
+@Mixin(GlShader.class)
 public interface ShaderProgramAccessor {
     @Accessor("activeProgramGlRef")
     static int getActiveProgramGlRef() {
